@@ -1,0 +1,34 @@
+{
+  "name": "ExchangeWallet-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon",
+    "start:order": "nodemon src/order.ts",
+    "build": "npm run build",
+    "typechain": "typechain --target ethers-v5 --out-dir contracts_types 'contracts/*/*.json'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@typechain/ethers-v5": "^11.0.0",
+    "await-to-js": "^3.0.0",
+    "ccxt": "^4.0.11",
+    "coingecko-api": "^1.0.10",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "nodemon": "^3.0.1",
+    "typechain": "^8.2.0"
+  },
+  "volta": {
+    "node": "18.16.1"
+  }
+}
